@@ -14,7 +14,7 @@ export default function NavBar(props: any) {
     const path = usePathname();
 
     return (
-        <nav className='py-2 border-b-[1px] border-t-[1px]'>
+        <nav className='py-2 border-y-[1px]'>
             <ul className='flex justify-center items-center gap-x-4 text-xl'>
                 {navElements.map((element) => {
                     return (
