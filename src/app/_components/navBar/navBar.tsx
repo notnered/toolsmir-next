@@ -20,7 +20,7 @@ export default function NavBar(props: any) {
                     return (
                         <li key={element.id}>
                             <Link href={element.link}>
-                                <h1 className={ path === element.link ? 'text-[#BE322A]' : 'font-normal'}>
+                                <h1 className={ path === element.link ? 'text-[#DA342C]' : 'font-normal'}>
                                     {element.name}
                                 </h1>
                             </Link>
