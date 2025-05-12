@@ -20,7 +20,8 @@ export default function NavBar(props: any) {
                     return (
                         <li key={element.id}>
                             <Link href={element.link}>
-                                <h1 className={ path === element.link ? 'text-[#DA342C]' : 'font-normal'}>
+                                <h1 
+                                    className={`${path === element.link ? 'text-[#DA342C]' : 'font-normal'} hover:text-[#DA342C] transition-colors`}>
                                     {element.name}
                                 </h1>
                             </Link>
