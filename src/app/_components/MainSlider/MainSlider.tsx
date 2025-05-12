@@ -31,7 +31,7 @@ export default function MainSlider() {
             <div className='flex justify-center gap-x-1'>
                 {Array(slides.slice(0, 5).length).fill('').map((element, index) => {
                     return (
-                        <div key={index} className='size-2.5 rounded-full bg-gray-900/85 hover:bg-gray-900 transition-colors cursor-pointer'></div>
+                        <div key={index} className='size-2.5 rounded-full bg-neutral-500 hover:bg-neutral-700 transition-colors cursor-pointer'></div>
                     )
                 })}
             </div>
