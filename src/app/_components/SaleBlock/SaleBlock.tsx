@@ -30,7 +30,7 @@ export default function SaleBlock() {
                 <div className='py-4 grid grid-cols-6 gap-4'>
                     {salesProducts.map((product, index) => {{
                         return (
-                            <div key={product.id} className='w-full'>
+                            <div key={product.id} className='w-full shadow-md shadow-neutral-300 inset-shadow-sm'>
                                 <Image
                                     className='h-56 object-cover rounded-t-md'
                                     title={product.name}
