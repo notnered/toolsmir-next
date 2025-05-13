@@ -6,8 +6,8 @@ import { MdAccessTimeFilled } from "react-icons/md";
 export default function B2BBlock() {
     return (
         <div className="my-4">
-            <div className="px-2">
-                <h1 className="text-2xl">Онлайн магазин для профессионалов и бизнеса</h1>
+            <div>
+                <h1 className="text-3xl">Онлайн магазин для профессионалов и бизнеса</h1>
             </div>
             <div className='flex py-4 gap-x-4'>
                 <div className='flex w-full justify-between gap-x-4'>
@@ -46,7 +46,18 @@ export default function B2BBlock() {
                     </div>
                 </div>
                 <div className='flex w-full'>
-                    <div className='w-full bg-neutral-400 rounded-md shadow-md shadow-neutral-300 inset-shadow-sm'></div>
+                    <div className='w-full bg-neutral-500 rounded-md shadow-md shadow-neutral-300 inset-shadow-sm p-4'>
+                        <div className="pb-2">
+                            <h1 className="text-3xl text-white font-medium">Покупайте как юрлицо</h1>
+                        </div>
+                        <div className="flex flex-wrap gap-2 max-w-2/4">
+                            <div className="bg-neutral-400 text-white py-1 px-2 rounded-md">Персональный менеджер</div>
+                            <div className="bg-neutral-400 text-white py-1 px-2 rounded-md">ЭДО</div>
+                            <div className="bg-neutral-400 text-white py-1 px-2 rounded-md">Личный кабинет B2B</div>
+                            <div className="bg-neutral-400 text-white py-1 px-2 rounded-md">Отсрочка платежа</div>
+                            <div className="bg-neutral-400 text-white py-1 px-2 rounded-md">Система оптовых скидок</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
