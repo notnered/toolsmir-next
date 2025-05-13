@@ -30,7 +30,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang='en'>
-            <body className={`${roboto.className} container mx-auto antialiased`}>
+            <body className={`${roboto.className} container mx-auto px-2 antialiased`}>
                 {children}
             </body>
         </html>
