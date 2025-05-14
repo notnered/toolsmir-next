@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { FaCircleCheck, FaHandshake   } from "react-icons/fa6";
 import { MdAccessTimeFilled } from "react-icons/md";
+import Image from 'next/image';
+import b2bImage from '../../../../public/b2b.png';
 
 
 export default function B2BBlock() {
@@ -50,12 +52,18 @@ export default function B2BBlock() {
                         <div className="pb-2">
                             <h1 className="text-3xl text-white font-medium">Покупайте как юрлицо</h1>
                         </div>
-                        <div className="flex flex-wrap gap-2 max-w-2/4">
-                            <div className="bg-neutral-400 text-white py-1 px-2 rounded-md">Персональный менеджер</div>
-                            <div className="bg-neutral-400 text-white py-1 px-2 rounded-md">ЭДО</div>
-                            <div className="bg-neutral-400 text-white py-1 px-2 rounded-md">Личный кабинет B2B</div>
-                            <div className="bg-neutral-400 text-white py-1 px-2 rounded-md">Отсрочка платежа</div>
-                            <div className="bg-neutral-400 text-white py-1 px-2 rounded-md">Система оптовых скидок</div>
+                        <div className="flex gap-4 items-start">
+                            <div className="flex flex-wrap gap-2 w-full">
+                                <div className="bg-neutral-400 text-white text-lg py-1 px-2 rounded-md">Персональный менеджер</div>
+                                <div className="bg-neutral-400 text-white text-lg py-1 px-2 rounded-md">Электронный документооборот (ЭДО)</div>
+                                <div className="bg-neutral-400 text-white text-lg py-1 px-2 rounded-md">Личный кабинет B2B</div>
+                                <div className="bg-neutral-400 text-white text-lg py-1 px-2 rounded-md">Отсрочка платежа</div>
+                                <div className="bg-neutral-400 text-white text-lg py-1 px-2 rounded-md">Система оптовых скидок</div>
+                                <div className="bg-neutral-400 text-white text-lg py-1 px-2 rounded-md">История заказов и аналитика покупок</div>
+                            </div>
+                            {/* <div className="flex w-full justify-center items-center">
+                                <h1 className="text-6xl text-white font-bold bg-red-500 p-4 rounded-md">B2B</h1>
+                            </div> */}
                         </div>
                     </div>
                 </div>
