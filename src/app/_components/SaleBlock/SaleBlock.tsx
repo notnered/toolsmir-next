@@ -39,7 +39,7 @@ export default function SaleBlock() {
                                     width={product.picture.width}
                                     height={product.picture.height}
                                 />
-                                <div className='p-3 rounded-b-md w-full flex flex-col bg-neutral-200/65 text-lg'>
+                                <div className='p-3 rounded-b-md w-full flex flex-col bg-white text-lg'>
                                     <p className='line-clamp-3 leading-6'>{product.name}</p>
                                     {/* price */}
                                     <div>
