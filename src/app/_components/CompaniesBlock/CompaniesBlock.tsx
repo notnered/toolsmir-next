@@ -27,7 +27,7 @@ export default function CompaniesBlock() {
                                 <Image
                                     className='h-40 object-cover rounded-md'
                                     src={brand.picture.src}
-                                    alt={brand.name}
+                                    alt={`${brand.name}-${index}`}
                                     width={brand.picture.width}
                                     height={brand.picture.height}
                                 />
