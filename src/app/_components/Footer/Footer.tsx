@@ -29,7 +29,7 @@ const footerElements: FooterElementsType[][] = [
 
 export default function Footer() {
     return (
-        <footer className='my-4 bg-neutral-100 p-4 rounded-md'>
+        <footer className='mt-4 bg-neutral-100 p-4 rounded-md'>
             <div className='flex gap-4'>
                 <div className='w-full flex justify-between gap-4 text-lg'>
                     <FooterList title={'О компании'} list={footerElements[0]} />
