@@ -18,7 +18,7 @@ export default function MainSlider() {
             <div className='flex overflow-x-hidden gap-x-4 py-4'>
                 {slides.slice(0, 5).map((slide, index) => {
                     return (
-                        <div key={slide.id} className='w-full h-88'>
+                        <div key={slide.id} className='w-full h-88 shadow-md shadow-neutral-300 inset-shadow-sm'>
                             <Image
                                 className='object-cover h-full object-[0%_20%] rounded-md'
                                 title={slide.name}
