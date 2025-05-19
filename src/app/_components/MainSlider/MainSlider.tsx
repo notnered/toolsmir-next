@@ -1,10 +1,14 @@
 import Image from 'next/image';
-import slidePic from '../../../../public/slide.png';
+// import slidePic from '../../../../public/slide.png';
+
+import slideId0 from '../../../../public/slider/newslide0.png'
+import slideId1 from '../../../../public/slider/newslide1.png'
+import slideId2 from '../../../../public/slider/newslide2.png'
 
 const slides = [
-    {id: 0, picture: slidePic, name: 'Слайдер'},
-    {id: 1, picture: slidePic, name: 'Слайдер'},
-    {id: 2, picture: slidePic, name: 'Слайдер'},
+    {id: 0, picture: slideId0, name: 'Слайдер'},
+    {id: 1, picture: slideId1, name: 'Слайдер'},
+    {id: 2, picture: slideId2, name: 'Слайдер'},
     // {id: 3, picture: slidePic, name: 'Слайдер'},
 ]
 
@@ -14,9 +18,9 @@ export default function MainSlider() {
             <div className='flex overflow-x-hidden gap-x-4 py-4'>
                 {slides.slice(0, 5).map((slide, index) => {
                     return (
-                        <div key={slide.id} className='w-full min-w-1/3'>
+                        <div key={slide.id} className='w-full h-88'>
                             <Image
-                                className='h-80 object-cover rounded-md'
+                                className='object-cover h-full object-[0%_20%] rounded-md'
                                 title={slide.name}
                                 src={slide.picture.src}
                                 alt={slide.name}
