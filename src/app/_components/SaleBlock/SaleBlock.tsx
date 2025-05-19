@@ -1,13 +1,21 @@
 import Image from 'next/image';
-import slidePic from '../../../../public/slide.png';
+// import slidePic from '../../../../public/slide.png';
+
+import pictureId0 from '../../../../public/catalog/pila-tsepnaya-akkumulyatornaya-zitrek-greensaw-12-12v-2-0ach-li-ion-akkum-2sht-zu-085-4449-15794331.webp';
+import pictureId1 from '../../../../public/catalog/akkumulyatornyj-lentochnyj-shurupovert-keyang-sd20bl-13122503.webp'
+import pictureId2 from '../../../../public/catalog/gvozdezabivatel-ryobi-r16gn18-0-one-5133005137-13620181.webp'
+import pictureId3 from '../../../../public/catalog/nabor-tortsevyh-golovok-i-prinadlezhnostej-94-predmeta-rockforce-rf-4941-5-1179678.webp'
+import pictureId4 from '../../../../public/catalog/konditsioner-mobilnyj-linea-bpac-07-ln-n6-ballu-ns-1694727-18492564.webp'
+import pictureId5 from '../../../../public/catalog/nabor-kombinirovannyh-klyuchej-forsage-f-5261p36-26-pr-7028-1890182.webp'
+
 
 const salesProducts = [
-    {id: 0, picture: slidePic, name: 'Пила цепная аккумуляторная Zitrek GreenSaw 12 12В,2,0Ач Li-ion аккум. 2шт, ЗУ 085-4449'},
-    {id: 1, picture: slidePic, name: 'Аккумуляторный ленточный шуруповерт KEYANG SD20BL'},
-    {id: 2, picture: slidePic, name: 'Гвоздезабиватель Ryobi R16GN18-0 ONE+ 5133005137'},
-    {id: 3, picture: slidePic, name: 'Набор торцевых головок и вставок Rockforce 1/2, 1/4DR 6-гранных 94 предмета RF-4941-5(4281)'},
-    {id: 4, picture: slidePic, name: 'Кондиционер мобильный Linea BPAC-07 LN/N6 Ballu НС-1694727'},
-    {id: 5, picture: slidePic, name: 'Набор ключей комбинированных Forsage 26пр. F-5261P36(7028)'},
+    {id: 0, picture: pictureId0, name: 'Пила цепная аккумуляторная Zitrek GreenSaw 12 12В,2,0Ач Li-ion аккум. 2шт, ЗУ 085-4449', price: 23999, oldprice: 29999},
+    {id: 1, picture: pictureId1, name: 'Аккумуляторный ленточный шуруповерт KEYANG SD20BL', price: 7149, oldprice: 8949},
+    {id: 2, picture: pictureId2, name: 'Гвоздезабиватель Ryobi R16GN18-0 ONE+ 5133005137', price: 4399, oldprice: 5499},
+    {id: 3, picture: pictureId3, name: 'Набор торцевых головок и вставок Rockforce 1/2, 1/4DR 6-гранных 94 предмета RF-4941-5(4281)', price: 1599, oldprice: 1999},
+    {id: 4, picture: pictureId4, name: 'Кондиционер мобильный Linea BPAC-07 LN/N6 Ballu НС-1694727', price: 27999, oldprice: 34999},
+    {id: 5, picture: pictureId5, name: 'Набор ключей комбинированных Forsage 26пр. F-5261P36(7028)', price: 2199, oldprice: 2749},
 ]
 
 export default function SaleBlock() {
@@ -44,12 +52,12 @@ export default function SaleBlock() {
                                     {/* price */}
                                     <div>
                                         <div className='flex items-center'>
-                                            <span className='line-through '>12,499₽</span>
+                                            <span className='line-through '>{product.oldprice.toLocaleString()}₽</span>
                                             <div className='bg-green-600 ml-1.5 px-1.5 rounded-md leading-6 text-white'>
                                                 -20%
                                             </div>
                                         </div>
-                                        <p className='font-semibold text-2xl'>9,999₽</p>
+                                        <p className='font-semibold text-2xl'>{product.price.toLocaleString()}₽</p>
                                     </div>
                                 </div>
                             </div> 
