@@ -1,13 +1,20 @@
 import Image from 'next/image';
-import slidePic from '../../../../public/slide.png';
+// import slidePic from '../../../../public/slide.png';
+
+import brandId0 from '../../../../public/brands/aeg.webp';
+import brandId1 from '../../../../public/brands/atlet.webp';
+import brandId2 from '../../../../public/brands/dca.webp';
+import brandId3 from '../../../../public/brands/fubag.webp';
+import brandId4 from '../../../../public/brands/gigant.webp';
+import brandId5 from '../../../../public/brands/keyang.webp';
 
 const brandsList = [
-    {id: 0, picture: slidePic, name: 'Бренд'},
-    {id: 1, picture: slidePic, name: 'Бренд'},
-    {id: 2, picture: slidePic, name: 'Бренд'},
-    {id: 3, picture: slidePic, name: 'Бренд'},
-    {id: 4, picture: slidePic, name: 'Бренд'},
-    {id: 5, picture: slidePic, name: 'Бренд'},
+    {id: 0, picture: brandId0, name: 'AEG'},
+    {id: 1, picture: brandId1, name: 'ATLET'},
+    {id: 2, picture: brandId2, name: 'DCA'},
+    {id: 3, picture: brandId3, name: 'FUBAG'},
+    {id: 4, picture: brandId4, name: 'GIGANT'},
+    {id: 5, picture: brandId5, name: 'KEYANG'},
 ]
 
 export default function CompaniesBlock() {
@@ -23,9 +30,9 @@ export default function CompaniesBlock() {
                 <div className='py-4 grid grid-cols-6 gap-4'>
                     {brandsList.slice(0, 6).map((brand, index) => {
                         return (
-                            <div key={brand.id}>
+                            <div key={brand.id} className='h-full'>
                                 <Image
-                                    className='h-40 object-cover rounded-md'
+                                    className='object-cover rounded-md'
                                     src={brand.picture.src}
                                     alt={`${brand.name}-${index}`}
                                     width={brand.picture.width}
