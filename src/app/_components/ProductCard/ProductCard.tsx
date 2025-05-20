@@ -70,7 +70,7 @@ export default function ProductCard({
                     {productInfo.price.discountPercentage && (
                         <>
                             <span className='line-through'>
-                                {productInfo.price.basePrice}
+                                {productInfo.price.basePrice.toLocaleString()}
                             </span>
                             <div className='bg-green-600 py-0.5 px-1.5 rounded-md text-white'>
                                 -{productInfo.price.discountPercentage}%
@@ -81,15 +81,17 @@ export default function ProductCard({
                 <div className='text-2xl font-bold pb-2'>
                     {productInfo.price.discountPercentage ? (
                         <>
-                            {(
-                                productInfo.price.basePrice -
-                                (productInfo.price.basePrice *
-                                    productInfo.price.discountPercentage) /
-                                    100
-                            ).toFixed(0)}
+                            {Number(
+                                (
+                                    productInfo.price.basePrice -
+                                    (productInfo.price.basePrice *
+                                        productInfo.price.discountPercentage) /
+                                        100
+                                ).toFixed(0)
+                            ).toLocaleString()}
                         </>
                     ) : (
-                        <>{productInfo.price.basePrice}</>
+                        <>{productInfo.price.basePrice.toLocaleString()}</>
                     )}
                     р
                 </div>
@@ -103,7 +105,7 @@ export default function ProductCard({
                             disabled
                             className='bg-primary/85 px-3 py-1.5 text-white rounded-md text-lg min-w-full'
                         >
-                            Недоступно
+                            Нет в наличии
                         </button>
                     )}
                 </div>
