@@ -4,55 +4,59 @@ import pic2 from '../../../../public/catalog/placeholder0.jpg';
 
 export type productType = {
     id: number;
-    code: string;
     image: string;
-    rating: number;
-    reviews: number;
-    title: string;
+    name: string;
     availability: number;
+    rating: {
+        starsCount?: number;
+        reviewsCount?: number;
+    };
     price: {
-        amount: number;
-        discount?: number;
+        basePrice: number;
+        discountPercentage?: number;
     };
 };
 
 const productsArray: productType[] = [
     {
         id: 1,
-        code: '1532432',
         image: pic.src,
-        rating: 5,
-        reviews: 354,
-        title: 'Аккумуляторная угловая шлифмашина Ryobi ONE+ R18AG-0 5133001903',
+        name: 'Аккумуляторная угловая шлифмашина Ryobi ONE+ R18AG-0 5133001903',
         availability: 2,
+        rating: {
+            starsCount: 5,
+            reviewsCount: 354,
+        },
         price: {
-            amount: 34990,
-            discount: 20,
+            basePrice: 34990,
+            discountPercentage: 20,
         },
     },
     {
         id: 2,
-        code: '1543712',
         image: pic2.src,
-        rating: 4.5,
-        reviews: 12,
-        title: 'Гвоздезабиватель Ryobi R16GN18-0 ONE+ 5133005137',
+        name: 'Гвоздезабиватель Ryobi R16GN18-0 ONE+ 5133005137',
         availability: 0,
+        rating: {
+            starsCount: 4.5,
+            reviewsCount: 12,
+        },
         price: {
-            amount: 5499,
-            discount: 20,
+            basePrice: 5499,
+            discountPercentage: 20,
         },
     },
     {
         id: 3,
-        code: '1512312',
         image: pic.src,
-        rating: 4,
-        reviews: 2,
-        title: 'Золотая ложка лол',
+        name: 'Золотая ложка лол',
         availability: 99,
+        rating: {
+            starsCount: 4,
+            reviewsCount: 2,
+        },
         price: {
-            amount: 5699,
+            basePrice: 5699,
         },
     },
 ];
