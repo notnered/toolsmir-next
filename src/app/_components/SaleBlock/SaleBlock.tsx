@@ -30,7 +30,7 @@ export default function SaleBlock() {
                         <h1 className='text-3xl font-medium'>
                             Волна выгоды: большая распродажа
                         </h1>
-                        <button className='bg-[#DA342C] text-xl py-0.5 text-white px-3.5 rounded-md hover:saturate-110 transition-all cursor-pointer'>
+                        <button className='bg-primary text-xl py-0.5 text-white px-3.5 rounded-md hover:saturate-110 transition-all cursor-pointer'>
                             Смотреть
                         </button>
                     </div>
