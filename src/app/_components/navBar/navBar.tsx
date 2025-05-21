@@ -6,7 +6,7 @@ const navElements = [
     { id: 'home', name: 'Главная', link: '/' },
     { id: 'catalog', name: 'Каталог', link: '/catalog' },
     { id: 'about', name: 'О компании', link: '/about' },
-    { id: 'contact', name: 'Контакты', link: '/contact' },
+    // { id: 'contact', name: 'Контакты', link: '/contact' },
     { id: 'cart', name: 'Корзина', link: '/cart' },
 ];
 

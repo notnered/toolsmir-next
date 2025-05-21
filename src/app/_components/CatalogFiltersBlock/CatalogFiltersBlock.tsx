@@ -118,7 +118,7 @@ export default function CatalogFiltersBlock() {
                 </div>
             </div>
 
-            <div className='flex flex-col gap-y-2 w-full mt-2'>
+            <div className='flex flex-col gap-y-2 w-full'>
                 <button className='bg-primary rounded-md px-2 py-1 text-white'>
                     Применить
                 </button>
