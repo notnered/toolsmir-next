@@ -1,16 +1,8 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono, Roboto } from 'next/font/google';
+import { Roboto } from 'next/font/google';
 import './globals.css';
-
-const geistSans = Geist({
-    variable: '--font-geist-sans',
-    subsets: ['latin'],
-});
-
-const geistMono = Geist_Mono({
-    variable: '--font-geist-mono',
-    subsets: ['latin'],
-});
+import { Provider } from 'react-redux';
+import store from './store/store';
 
 const roboto = Roboto({
     variable: '--font-roboto',
@@ -29,10 +21,12 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang='en'>
-            <body className={`${roboto.className} container mx-auto px-2 antialiased`}>
-                {children}
-            </body>
-        </html>
+        <Provider store={store} >
+            <html lang='en'>
+                <body className={`${roboto.className} container mx-auto px-2 antialiased`}>
+                    {children}
+                </body>
+            </html>
+        </Provider>
     );
 }
