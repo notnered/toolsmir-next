@@ -1,14 +1,13 @@
 import type { Metadata } from 'next';
 import { Roboto } from 'next/font/google';
 import './globals.css';
-import { Provider } from 'react-redux';
-import store from './store/store';
+import ReduxProvider from './store/ReduxProvider';
 
 const roboto = Roboto({
     variable: '--font-roboto',
     subsets: ['latin', 'cyrillic'],
     weight: 'variable',
-})
+});
 
 export const metadata: Metadata = {
     title: 'Мир-инструмента',
@@ -21,12 +20,12 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <Provider store={store} >
-            <html lang='en'>
-                <body className={`${roboto.className} container mx-auto px-2 antialiased`}>
-                    {children}
-                </body>
-            </html>
-        </Provider>
+        <html lang='en'>
+            <body
+                className={`${roboto.className} container mx-auto px-2 antialiased`}
+            >
+                <ReduxProvider>{children}</ReduxProvider>
+            </body>
+        </html>
     );
 }
