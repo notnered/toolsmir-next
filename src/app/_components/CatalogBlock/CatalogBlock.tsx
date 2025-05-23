@@ -1,6 +1,9 @@
 import pic from '../../../../public/slide.png';
 import ProductCard from '../ProductCard/ProductCard';
 import pic2 from '../../../../public/catalog/placeholder0.jpg';
+import pic3 from '../../../../public/catalog/placeholder1.jpg'
+import pic4 from '../../../../public/catalog/placeholder2.jpg'
+import pic5 from '../../../../public/catalog/placeholder3.jpg'
 import CatalogFiltersBlock from '../CatalogFiltersBlock/CatalogFiltersBlock';
 
 export type productType = {
@@ -21,12 +24,12 @@ export type productType = {
 const productsArray: productType[] = [
     {
         id: 1,
-        image: pic.src,
-        name: 'Аккумуляторная угловая шлифмашина Ryobi ONE+ R18AG-0 5133001903',
-        availability: 2,
+        image: pic3.src,
+        name: 'Набор ключей',
+        availability: 11,
         rating: {
             starsCount: 5,
-            reviewsCount: 354,
+            reviewsCount: 132,
         },
         price: {
             basePrice: 34990,
@@ -36,7 +39,7 @@ const productsArray: productType[] = [
     {
         id: 2,
         image: pic2.src,
-        name: 'Гвоздезабиватель Ryobi R16GN18-0 ONE+ 5133005137',
+        name: 'Компрессор AURORA',
         availability: 0,
         rating: {
             starsCount: 4.5,
@@ -49,80 +52,82 @@ const productsArray: productType[] = [
     },
     {
         id: 3,
-        image: pic.src,
-        name: 'Золотая ложка лол',
-        availability: 99,
+        image: pic5.src,
+        name: 'Сварочный полуавтомат AURORA',
+        availability: 23,
         rating: {
-            starsCount: 4,
-            reviewsCount: 2,
+            starsCount: 5,
+            reviewsCount: 9,
         },
         price: {
-            basePrice: 5699,
+            basePrice: 13149,
         },
     },
     {
         id: 4,
-        image: pic.src,
-        name: 'Золотая ложка лол',
-        availability: 99,
+        image: pic4.src,
+        name: 'Электронный триммер',
+        availability: 9,
         rating: {
-            starsCount: 4,
-            reviewsCount: 2,
+            starsCount: 3,
+            reviewsCount: 6,
         },
         price: {
-            basePrice: 5699,
+            basePrice: 10999,
         },
     },
     {
         id: 5,
-        image: pic.src,
-        name: 'Золотая ложка лол',
-        availability: 99,
+        image: pic3.src,
+        name: 'Набор ключей',
+        availability: 11,
         rating: {
-            starsCount: 4,
-            reviewsCount: 2,
+            starsCount: 5,
+            reviewsCount: 132,
         },
         price: {
-            basePrice: 5699,
+            basePrice: 34990,
+            discountPercentage: 20,
         },
     },
     {
         id: 6,
-        image: pic.src,
-        name: 'Золотая ложка лол',
-        availability: 4123,
+        image: pic2.src,
+        name: 'Компрессор AURORA',
+        availability: 0,
         rating: {
-            starsCount: 4,
-            reviewsCount: 2,
+            starsCount: 4.5,
+            reviewsCount: 12,
         },
         price: {
-            basePrice: 5699,
+            basePrice: 5499,
+            discountPercentage: 20,
         },
     },
     {
         id: 7,
-        image: pic.src,
-        name: 'Золотая ложка лол',
-        availability: 99,
+        image: pic5.src,
+        name: 'Сварочный полуавтомат AURORA',
+        availability: 23,
         rating: {
-            starsCount: 4,
-            reviewsCount: 2,
+            starsCount: 5,
+            reviewsCount: 9,
         },
         price: {
-            basePrice: 5699,
+            basePrice: 13149,
         },
     },
     {
         id: 8,
-        image: pic.src,
-        name: 'Золотая ложка лол',
-        availability: 99,
+        image: pic4.src,
+        name: 'Электронный триммер',
+        availability: 9,
         rating: {
-            starsCount: 4,
-            reviewsCount: 2,
+            starsCount: 3,
+            reviewsCount: 6,
         },
         price: {
-            basePrice: 5699,
+            basePrice: 10999,
         },
     },
 ];

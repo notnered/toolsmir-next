@@ -27,7 +27,7 @@ export default function ProductCard({
             </div>
             <div>
                 <Image
-                    className='object-cover h-56 rounded-md'
+                    className='object-contain bg-white h-56 rounded-md'
                     src={productInfo.image}
                     alt='Товар'
                     width={1024}
